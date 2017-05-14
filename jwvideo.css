@@ -1,0 +1,15 @@
+#player {
+  margin:auto;
+}
+#feedback {
+  margin:auto;
+  text-align:center;
+  background-color:black;
+  opacity:0.7;
+  color:white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: Verdana, sans-serif;
+}

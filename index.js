@@ -3,6 +3,10 @@
 // "FULL SCREEN": two hands palms facing, moving apart
 // EXIT "FULL SCREEN": two hands palms facing, moving towards
 
+//TODO: change toggle gestures to objects
+//TODO: detect change in position for play and FULL
+//TODO: volume adjustment?
+
 // Issues:
 // - pause/play too sensitive, so sometimes switch
 var PALM_DOWN = [0, -1, 0];
@@ -11,6 +15,8 @@ var PALM_RIGHT = [1, 0, 0];
 var VEL_THRESH = 150;
 
 var INIT_WIDTH = 800;
+
+// CHANGE_THRESH: min num frames btwn commands
 var FULL_CHANGE_THRESH = 80;
 var PLAY_CHANGE_THRESH = 50;
 
