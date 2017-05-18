@@ -2,6 +2,7 @@ var PALM_DOWN = [0, -1, 0];
 var PALM_LEFT = [-1, 0, 0];
 var PALM_RIGHT = [1, 0, 0];
 var VEL_THRESH = 130;
+var VEL_THRESH_FULL = 90;
 
 var GRAB_THRESH = 0.3;
 var VOL_RATIO = 0.75;
@@ -290,8 +291,8 @@ window.onload = () => {
         // if left and right hands are moving fast enough in certain diretions
 
         if (
-          leftHand.palmVelocity[0] < VEL_THRESH &&
-          rightHand.palmVelocity[0] > VEL_THRESH &&
+          leftHand.palmVelocity[0] < VEL_THRESH_FULL &&
+          rightHand.palmVelocity[0] > VEL_THRESH_FULL &&
           leftHand.palmPosition[0] - toggleFullGestureStart.init_left <= -X_CHANGE &&
           rightHand.palmPosition[0] - toggleFullGestureStart.init_right >= X_CHANGE
         ) {
@@ -301,8 +302,8 @@ window.onload = () => {
             resetState(toggleFullGestureStart, 'WAITING');
           }
         } else if (
-          leftHand.palmVelocity[0] > VEL_THRESH &&
-          rightHand.palmVelocity[0] < VEL_THRESH &&
+          leftHand.palmVelocity[0] > VEL_THRESH_FULL &&
+          rightHand.palmVelocity[0] < VEL_THRESH_FULL &&
           leftHand.palmPosition[0] - toggleFullGestureStart.init_left >= X_CHANGE &&
           rightHand.palmPosition[0] - toggleFullGestureStart.init_right <= -X_CHANGE
         ) {
