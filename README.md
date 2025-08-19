@@ -15,4 +15,4 @@ You may switch videos at any point by clicking the "Choose File" button.
 
 **Seek:** Index finger pointed towards screen, moving left/right
 ## Bugs
-Sometimes the JW Player video player doesn't load correctly. If the video player doesn't have any text in the feedback bar after you choose a video file to play, just refresh the page and start over.
+Sometimes the JW Player video player doesn't load correctly. If the video player does not have any text in the feedback bar after you choose a video file to play, just refresh the page and start over.
